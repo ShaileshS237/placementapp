@@ -1,0 +1,28 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="container">
+    <h1>Welcome Back <br>
+      Sign In,<br>
+      Awsome Stuff is Wating<br>
+      For You.<br>
+      </h1>
+    <mat-form-field appearance="outline">
+      <mat-label>Enter Your Mobile No.</mat-label>
+      <input type="email" matInput >
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Enter Your Mobile No.</mat-label>
+      <input type="email" matInput >
+    </mat-form-field>
+    <button class="my-class" mat-flat-button color="primary">Login</button>
+    <h5>Don’t Have An Account ? <span style="font-weight: 700;" [routerLink]="['/register']" routerLinkActive="router-link-active" >Register Now.</span></h5>
+  </div>
+</ion-content>

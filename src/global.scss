@@ -24,3 +24,10 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+*{
+    ion-content
+    {
+        --background :linear-gradient(0deg, rgba(181,215,217,1) 0%, rgba(255,255,255,1) 100%)
+    }
+}

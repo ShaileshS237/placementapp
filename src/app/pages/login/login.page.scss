@@ -1,0 +1,43 @@
+
+.container{
+    padding: 42px;
+}
+mat-form-field {
+    width: 100%;
+    
+  }
+
+  .my-class{
+    height: 53px;
+    width: 100%!important;
+    min-width: unset!important;
+}
+
+h1{
+  font-weight: 700;
+  line-height: 38px;
+    font-size: 30px;
+
+}
+
+.mat-input-underline {
+  background-color: #FF0000;    /* replace this color with your accent color hex code */
+}
+
+
+h5{
+  margin-top: 20px;
+  text-align: center;
+}
+
+:host ::ng-deep mat-form-field .mat-form-field-outline-start {
+  background-color: white !important;
+}
+:host ::ng-deep mat-form-field .mat-form-field-outline-gap {
+  background-color: white !important;
+  ;
+}
+
+:host ::ng-deep mat-form-field .mat-form-field-outline-end {
+  background-color: white !important;
+}

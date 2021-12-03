@@ -1,0 +1,45 @@
+@import '~@angular/material/theming';
+@include mat-core();
+$my-blue: (
+  50: #393939,
+  100: #393939,
+  200: #393939,
+  300: #393939,
+  400: #393939,
+  500: #393939,
+  600: #393939,
+  700: #393939,
+  800: #393939,
+  900: #393939,
+  A100: #393939,
+  A200: #393939,
+  A400: #393939,
+  A700: #393939,
+  contrast: (
+    50: white,
+    100: white,
+    200: white,
+    300: white,
+    400: white,
+    500: white,
+    600: white,
+    700: white,
+    800: white,
+    900: white,
+    A100: white,
+    A200: white,
+    A400: white,
+    A700: white,
+  )
+);
+$custom-typography: mat-typography-config(
+  $font-family: 'Miriam Libre'
+);
+@include mat-core($custom-typography);
+
+$my-app-primary: mat-palette($my-blue, 100, 50, 200);
+$my-app-accent:  mat-palette($mat-pink, 500, 900, A100);
+$my-app-warn:    mat-palette($mat-deep-orange);
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+@include angular-material-theme($my-app-theme);
+
